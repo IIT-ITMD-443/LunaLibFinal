@@ -12,9 +12,10 @@ dist
 dist-ssr
 *.local
 
-# Environment files (added for LunaLib)
+# Environment files (added for LunaLibFinal)
 .env
 .env.*
+dab-config.local.json
 
 # Editor directories and files
 .vscode/*
