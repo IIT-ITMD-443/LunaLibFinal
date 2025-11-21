@@ -1,0 +1,45 @@
+{
+  "databaseType": "mssql",
+  "connectionString": "@env('MSSQL_CONNECTION_STRING')",
+  "runtime": {
+    "rest": {
+      "enabled": true,
+      "path": "/api"
+    },
+    "graphql": {
+      "enabled": false
+    }
+  },
+  "host": {
+    "mode": "production",
+    "cors": {
+      "origin": "*"
+    }
+  },
+  "entities": {
+    "Users": {
+      "source": "Users",
+      "permissions": [
+        { "role": "anonymous", "actions": ["read","create","update","delete"] }
+      ]
+    },
+    "Books": {
+      "source": "Books",
+      "permissions": [
+        { "role": "anonymous", "actions": ["read","create","update","delete"] }
+      ]
+    },
+    "Collections": {
+      "source": "Collections",
+      "permissions": [
+        { "role": "anonymous", "actions": ["read","create","update","delete"] }
+      ]
+    },
+    "CollectionBooks": {
+      "source": "CollectionBooks",
+      "permissions": [
+        { "role": "anonymous", "actions": ["read","create","update","delete"] }
+      ]
+    }
+  }
+}
