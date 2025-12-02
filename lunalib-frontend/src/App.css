@@ -1,4 +1,5 @@
-/* FULL APP LAYOUT */
+/* ROOT + GLOBAL LAYOUT */
+
 .app-layout {
   background-color: #DCD2BE;
   min-height: 100vh;
@@ -6,179 +7,278 @@
   flex-direction: column;
 }
 
+.app-main {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+}
+
 /* HEADER */
+
 .header {
   background-color: white;
   padding: 10px 20px;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
 }
 
 .header-logo {
   height: 70px;
 }
 
+@media (max-width: 700px) {
+  .header-logo {
+    height: 45px;
+  }
+}
+
 /* NAVBAR */
+
 .navbar {
   background-color: white;
   display: flex;
-  justify-content: space-between;   /* Left | Center | Right */
   align-items: center;
   padding: 12px 20px;
 }
 
-/* GROUPS */
-.nav-left,
-.nav-center,
-.nav-right {
+.nav-left {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
 }
 
-/* ICON + TEXT */
 .nav-item {
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 10px;
   font-size: 0.95rem;
   color: #333;
+  padding: 6px 10px;
   border-radius: 8px;
+  text-decoration: none;
 }
 
 .nav-item img {
   height: 25px;
 }
 
-/* TOTAL BOOKS */
-.nav-total-books {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 12px;
+@media (max-width: 700px) {
+  .navbar {
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+
+  .nav-item {
+    flex-direction: column;
+    font-size: 0.80rem;
+    gap: 4px;
+    padding: 4px 0;
+  }
+
+  .nav-item img {
+    height: 22px;
+  }
 }
 
-.total-number {
-  font-weight: bold;
-}
-
-/* HOME PAGE LAYOUT */
+/* HOME PAGE */
 
 .home-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;              
-  padding: 30px 0;
-  gap: 40px;
+  padding-bottom: 60px;
 }
 
 .home-section {
-  width: 960px;                    
-  background-color: #ffffff;
+  background: white;
   border-radius: 14px;
-  border: 2px solid #cbb7a6;
-  padding: 28px 32px;  
+  padding: 18px;
+  margin-bottom: 35px;
 }
 
 .section-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
-.book-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 32px;
+.section-header h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
 }
+
+.section-count {
+  opacity: 0.7;
+}
+
+/* BOOK CARD */
 
 .book-card {
-  width: 165px;                  
-  height: 245px;
-  background-color: #e2e2e2;
-  border-radius: 14px;
+  width: 180px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #cfcfcf;
+  flex-shrink: 0;
 }
 
-.bottom-row {
-  width: 960px;                   
+.book-cover {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.book-meta {
+  padding: 12px;
+}
+
+.book-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.book-author {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* BOOK ROWS */
+
+.books-row {
   display: flex;
-  gap: 30px;
-}
-
-.total-books-box {
-  flex: 1;
-  background-color: #ffffff;
-  padding: 25px;
-  border-radius: 14px;
-  border: 2px solid #cbb7a6;
-}
-
-.total-boxes {
-  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
-  margin-top: 15px;
+  min-height: 360px; 
+  margin-top: 10px;  
 }
 
-.total-box {
-  flex: 1;
-  background-color: #efefef;
+@media (max-width: 700px) {
+  .books-row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 12px;
+  }
+}
+
+/* MY LIBRARY PAGE */
+
+.library-page {
+  display: flex;
+  gap: 25px;
+  margin-top: 60px; 
+}
+
+.library-left {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+.library-right {
+  flex-grow: 1;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 40px; 
+}
+
+@media (max-width: 700px) {
+  .library-page {
+    flex-direction: column;
+  }
+
+  .library-left {
+    width: 100%;
+  }
+}
+
+/* SEARCH BAR */
+
+.search-bar {
+  width: 100%;
+  max-width: 1100px; 
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #999;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+/* FILTER SIDEBAR */
+
+.filters-sidebar {
+  background: white;
   padding: 18px;
-  border-radius: 10px;
-  text-align: center;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  width: 260px;
+  box-sizing: border-box;
 }
 
-.next-read-box {
-  flex: 1;
-  background-color: #ffffff;
-  padding: 25px;
-  border-radius: 14px;
-  border: 2px solid #cbb7a6;
+.filters-title {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 12px;
 }
 
-.next-read-content {
+.filters-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filters-list li {
+  margin: 10px 0;
+  height: 26px;
   display: flex;
-  gap: 20px;
-  margin-top: 18px;
+  align-items: center;
 }
 
-.next-read-image {
-  width: 120px;
-  height: 180px;
-  background-color: #e2e2e2;
-  border-radius: 10px;
+.filters-list label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  line-height: 1;
+  cursor: pointer;
 }
 
-/* RESPONSIVE */
+/* CUSTOM RADIO BUTTONS */
 
-@media (max-width: 1300px) {
-  .home-section,
-  .bottom-row {
-    width: 95%;
-  }
-
-  .book-card {
-    width: 150px;
-    height: 220px;
-  }
+.filters-list input[type="radio"] {
+  appearance: none;
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #444;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+  background: white;
 }
 
-@media (max-width: 1100px) {
-  .book-row {
-    gap: 20px;
-  }
-
-  .book-card {
-    width: 140px;
-    height: 210px;
-  }
+.filters-list input[type="radio"]:checked {
+  border-color: black;
 }
 
-@media (max-width: 1000px) {
-  .book-card {
-    width: 130px;
-    height: 200px;
-  }
+.filters-list input[type="radio"]:checked::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
 }

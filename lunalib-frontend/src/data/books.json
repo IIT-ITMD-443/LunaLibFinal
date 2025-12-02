@@ -1,0 +1,177 @@
+[
+  {
+    "id": 1,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "status": "completed",
+    "cover": ""
+  },
+  {
+    "id": 2,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "status": "unread",
+    "cover": ""
+  },
+  {
+    "id": 3,
+    "title": "1984",
+    "author": "George Orwell",
+    "status": "in-progress",
+    "cover": ""
+  },
+  {
+    "id": 4,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "status": "completed",
+    "cover": ""
+  },
+  {
+    "id": 5,
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "status": "wishlist",
+    "cover": ""
+  },
+  {
+    "id": 6,
+    "title": "Moby Dick",
+    "author": "Herman Melville",
+    "status": "unread",
+    "cover": ""
+  },
+  {
+    "id": 7,
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "status": "in-progress",
+    "cover": ""
+  },
+  {
+    "id": 8,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "status": "completed",
+    "cover": ""
+  },
+  {
+    "id": 9,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "status": "completed",
+    "cover": ""
+  },
+  {
+    "id": 10,
+    "title": "The Fellowship of the Ring",
+    "author": "J.R.R. Tolkien",
+    "status": "wishlist",
+    "cover": ""
+  },
+  {
+    "id": 11,
+    "title": "The Two Towers",
+    "author": "J.R.R. Tolkien",
+    "status": "completed",
+    "cover": ""
+  },
+  {
+    "id": 12,
+    "title": "The Return of the King",
+    "author": "J.R.R. Tolkien",
+    "status": "completed",
+    "cover": ""
+  },
+  {
+    "id": 13,
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "status": "unread",
+    "cover": ""
+  },
+  {
+    "id": 14,
+    "title": "Harry Potter and the Chamber of Secrets",
+    "author": "J.K. Rowling",
+    "status": "wishlist",
+    "cover": ""
+  },
+  {
+    "id": 15,
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "author": "J.K. Rowling",
+    "status": "wishlist",
+    "cover": ""
+  },
+  {
+    "id": 16,
+    "title": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "status": "in-progress",
+    "cover": ""
+  },
+  {
+    "id": 17,
+    "title": "Catching Fire",
+    "author": "Suzanne Collins",
+    "status": "unread",
+    "cover": ""
+  },
+  {
+    "id": 18,
+    "title": "Mockingjay",
+    "author": "Suzanne Collins",
+    "status": "unread",
+    "cover": ""
+  },
+  {
+    "id": 19,
+    "title": "The Fault in Our Stars",
+    "author": "John Green",
+    "status": "completed",
+    "cover": ""
+  },
+  {
+    "id": 20,
+    "title": "The Maze Runner",
+    "author": "James Dashner",
+    "status": "in-progress",
+    "cover": ""
+  },
+  {
+    "id": 21,
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "status": "unread",
+    "cover": ""
+  },
+  {
+    "id": 22,
+    "title": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "status": "completed",
+    "cover": ""
+  },
+  {
+    "id": 23,
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "status": "completed",
+    "cover": ""
+  },
+  {
+    "id": 24,
+    "title": "Dracula",
+    "author": "Bram Stoker",
+    "status": "completed",
+    "cover": ""
+  },
+  {
+    "id": 25,
+    "title": "The Little Prince",
+    "author": "Antoine de Saint-Exupéry",
+    "status": "wishlist",
+    "cover": ""
+  }
+]
