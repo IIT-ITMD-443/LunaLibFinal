@@ -1,32 +1,39 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
+
+// Pages
 import Home from './pages/Home.jsx'
 import MyLibrary from './pages/MyLibrary.jsx' 
 import BookDetails from './pages/BookDetails.jsx'
 import Auth from './pages/Auth.jsx'
 import Settings from './pages/Settings.jsx'
 
-
-// Import images from src/assets
-import Logo from './assets/logo.png';
-import HomeIcon from './assets/home.png';
-import MyLibraryIcon from './assets/mylibrary.png';
-import BookIcon from './assets/book.png';
-import LoginIcon from './assets/login.png';
-import SettingsIcon from './assets/settings.png';
+// Layout Components
+import Header from './components/Header.jsx';
+import Navbar from './components/Navbar.jsx';
 
 function App() {
-
   return (
-   <BrowserRouter> 
-      <Routes>
-        <Route path='/home' element={<Home />} />
-        <Route path='/library' element={<MyLibrary />} />
-        <Route path='/book/:id' element={<BookDetails />} />
-        <Route path='/auth' element={<Auth />} />
-        <Route path='/settings' element={<Settings />} />
-      </Routes>
-   </BrowserRouter>
+    <BrowserRouter>
+      <div className="app-layout">
+
+        {/* ALWAYS visible */}
+        <Header />
+        <Navbar />
+
+        {/* CHANGES depending on URL */}
+        <main className="app-main">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/mylibrary" element={<MyLibrary />} />
+            <Route path="/book/:id" element={<BookDetails />} />
+            <Route path="/auth" element={<Auth />} />
+            <Route path="/settings" element={<Settings />} />
+          </Routes>
+        </main>
+      </div>
+    </BrowserRouter>
   );
 }
 

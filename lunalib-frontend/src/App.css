@@ -1,0 +1,63 @@
+/* FULL APP LAYOUT */
+.app-layout {
+  background-color: #DCD2BE;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.header {
+  background-color: white;
+  padding: 10px 20px;
+  border-bottom: 2px solid #000000;
+}
+
+.header-logo {
+  height: 70px;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;   /* Left | Center | Right */
+  align-items: center;
+  padding: 12px 20px;
+}
+
+/* GROUPS */
+.nav-left,
+.nav-center,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ICON + TEXT */
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  font-size: 0.95rem;
+  color: #333;
+  border-radius: 8px;
+}
+
+.nav-item img {
+  height: 25px;
+}
+
+/* TOTAL BOOKS (center block) */
+.nav-total-books {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+}
+
+.total-number {
+  font-weight: bold;
+}
