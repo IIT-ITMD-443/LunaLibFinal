@@ -34,12 +34,6 @@
   height: 70px;
 }
 
-@media (max-width: 700px) {
-  .header-logo {
-    height: 45px;
-  }
-}
-
 /* NAVBAR */
 
 .navbar {
@@ -68,24 +62,6 @@
 
 .nav-item img {
   height: 25px;
-}
-
-@media (max-width: 700px) {
-  .navbar {
-    justify-content: space-evenly;
-    padding: 10px;
-  }
-
-  .nav-item {
-    flex-direction: column;
-    font-size: 0.80rem;
-    gap: 4px;
-    padding: 4px 0;
-  }
-
-  .nav-item img {
-    height: 22px;
-  }
 }
 
 /* HOME PAGE */
@@ -154,16 +130,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  min-height: 360px; 
-  margin-top: 10px;  
-}
-
-@media (max-width: 700px) {
-  .books-row {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding-bottom: 12px;
-  }
+  min-height: 360px;
+  margin-top: 10px;
 }
 
 /* MY LIBRARY PAGE */
@@ -171,7 +139,7 @@
 .library-page {
   display: flex;
   gap: 25px;
-  margin-top: 60px; 
+  margin-top: 60px;
 }
 
 .library-left {
@@ -185,24 +153,14 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-left: 40px; 
-}
-
-@media (max-width: 700px) {
-  .library-page {
-    flex-direction: column;
-  }
-
-  .library-left {
-    width: 100%;
-  }
+  padding-left: 40px;
 }
 
 /* SEARCH BAR */
 
 .search-bar {
   width: 100%;
-  max-width: 1100px; 
+  max-width: 1100px;
 }
 
 .search-bar input {
@@ -282,3 +240,78 @@
   top: 3px;
   left: 3px;
 }
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  /* HEADER */
+  .header-logo {
+    height: 45px;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+
+  .nav-item {
+    flex-direction: column;
+    font-size: 0.80rem;
+    gap: 4px;
+    padding: 4px 0;
+  }
+
+  .nav-item img {
+    height: 22px;
+  }
+
+  /* BOOK ROWS */
+  .books-row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 12px;
+  }
+
+  /* MY LIBRARY PAGE STRUCTURE */
+  .library-page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .library-left {
+    width: 100%;
+  }
+
+  /* CENTER RIGHT COLUMN CONTENT */
+  .library-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  /* FILTER SIDEBAR CENTERED */
+  .filters-sidebar {
+    width: 92%;
+    max-width: 360px;
+    margin: 0 auto 25px;
+  }
+
+  /* SEARCH BAR CENTERED */
+  .search-bar {
+    width: 92%;
+    max-width: 360px;
+    margin: 0 auto 25px;
+  }
+
+  /* BOOK ROW CENTERED */
+  .books-row {
+    width: 92%;
+    max-width: 360px;
+    margin: 0 auto 30px;
+  }
+}
+
