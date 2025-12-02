@@ -19,7 +19,7 @@ function Home() {
       <section className="home-section">
         <SectionHeader title="In Progress" count={inProgress.length} />
         <div className="books-row">
-          {inProgress.slice(0, 7).map(b => (
+          {inProgress.slice(0, 6).map(b => (
             <BookCard key={b.id} title={b.title} author={b.author} cover={b.cover} />
           ))}
         </div>
@@ -28,7 +28,7 @@ function Home() {
       <section className="home-section">
         <SectionHeader title="Unread" count={unread.length} />
         <div className="books-row">
-          {unread.slice(0, 7).map(b => (
+          {unread.slice(0, 6).map(b => (
             <BookCard key={b.id} title={b.title} author={b.author} cover={b.cover} />
           ))}
         </div>
@@ -37,7 +37,7 @@ function Home() {
       <section className="home-section">
         <SectionHeader title="Completed" count={completed.length} />
         <div className="books-row">
-          {completed.slice(0, 7).map(b => (
+          {completed.slice(0, 6).map(b => (
             <BookCard key={b.id} title={b.title} author={b.author} cover={b.cover} />
           ))}
         </div>
@@ -46,7 +46,7 @@ function Home() {
       <section className="home-section">
         <SectionHeader title="Wishlist" count={wishlist.length} />
         <div className="books-row">
-          {wishlist.slice(0, 7).map(b => (
+          {wishlist.slice(0, 6).map(b => (
             <BookCard key={b.id} title={b.title} author={b.author} cover={b.cover} />
           ))}
         </div>
