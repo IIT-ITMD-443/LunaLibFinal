@@ -11,7 +11,7 @@ LunaLib is a virtual library that lets users' catalog and track their physical b
     * Filtering options available (All Books, In Progress, Unread, Completed, Wishlist)
     * Search bar allows you to search for specific books by Title
       
-## Technologies Used
+## Technologies Used:
 * Frontend Framework: React​
 * CI/CD Source Control: GitHub Actions​
 * Deployment: Azure Static Web Apps​
@@ -19,7 +19,7 @@ LunaLib is a virtual library that lets users' catalog and track their physical b
 * Custom CSS using mainly Flexbox​
 * Sample book data stored locally in JSON​
 
-## Lessons Learned 
+## Lessons Learned:
 * Deploying React apps to Azure with CI/CD​
 * Handling frontend routing and component structure​
     * Helped me stay organized and made the structure very easy to
@@ -29,7 +29,7 @@ maintain​
 different when I was using React​
 * Maintaining a clean and organized Git workflow​
 
-## Future Scope
+## Future Scope:
 * Allow users to upload books​
 * Allow users to create book collections​
 * Add sort options and view options (Grid/List)​
